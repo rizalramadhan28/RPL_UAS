@@ -1,0 +1,37 @@
+# --- Storage runtime (jangan ikut commit) ---
+storage/uploads/swafoto/
+storage/uploads/izin/
+storage/logs/
+
+# Tetap commit struktur direktori beserta .htaccess proteksi
+!storage/uploads/.htaccess
+!storage/logs/.gitkeep
+
+# --- Kredensial / konfigurasi lokal ---
+config/database.local.php
+
+# --- Build/dev artifacts ---
+bin/.test-*
+bin/.t*.txt
+bin/.thk*.txt
+bin/.tlap.txt
+bin/.tpd.txt
+bin/.debug-cookies.txt
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# --- Vendor & dependencies (kalau nanti dipakai) ---
+vendor/
+composer.lock
+node_modules/
+package-lock.json
+
+# Kiro session / private cache (jika ada)
+.kiro/cache/
